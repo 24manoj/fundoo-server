@@ -43,7 +43,7 @@ app.use('/', routes)
 app.use('/elastic', search)
 app.use('/note', notesRoutes)
 //creating connection for mongodb
-mongoose.connect("mongodb://localhost:27017/fundoo", { useCreateIndex: true, useNewUrlParser: true })
+mongoose.connect("mongodb://localhost:27017/fundoo", { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
 //event Emiters
 mongoose.connection.on("connected", () => {
     console.log("Database connected sucessfully");
