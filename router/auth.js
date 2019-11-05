@@ -1,6 +1,8 @@
 let express = require('express');
 let router = express.Router();
-
+/**
+ * @abstract:social login
+ */
 let cors = require('cors')
 let passportGoogle = require('../auth/google')
 /** @description  initates the coonection for login with google*/

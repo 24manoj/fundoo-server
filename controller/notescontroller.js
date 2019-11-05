@@ -149,8 +149,7 @@ exports.getTrashNotes = (req, res) => {
                     response.errors = err
                 res.status(status.notfound).send(response)
             })
-        //     }
-        // })
+   
 
     } catch (e) {
         console.log(e)
@@ -319,7 +318,6 @@ exports.deleteNotes = (req, res) => {
                             response.sucess = false
                             res.status(status.notfound).send(response)
                         })
-
                 }
             })
         }
